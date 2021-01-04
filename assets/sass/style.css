@@ -1,3 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.col {
+  width: 50%;
+}
+
+.sign-up {
+  background: yellow;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 28rem;
+}
+.form-wrapper .form {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.form-wrapper .input-group {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+}
+.form-wrapper .input-group input {
+  width: 100%;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  background: #efefef;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #fff;
+  outline: none;
+}
+.form-wrapper .input-group input:focus {
+  border: 0.125rem solid #4EA658;
+}
+.form-wrapper .input-group i {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+}
+.form-wrapper .btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  outline: none;
+}
+.form-wrapper .btn--primary {
+  background-color: #4EA658;
+  color: #fff;
+}
+.form-wrapper p {
+  margin: 1rem 0;
+  font-size: 0.7rem;
+}
+.form-wrapper p .sign-up-here {
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.social-list {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.social-list .list-item {
+  color: #fff;
+  margin: 0 0.5rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.social-list .list-item i {
+  font-size: 1.5rem;
+  transition: 0.4s ease-in-out;
+}
+.social-list .list-item i:hover {
+  transform: scale(1.5);
+}
+
+.facebook-bg {
+  background: #4267B2;
+}
+
+.twitter-bg {
+  background: #1FA1F2;
+}
+
+.google-bg {
+  background: #DB4437;
+}
+
+.insta-bg {
+  background: #E1306C;
+}
+
+.flex-col {
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,2 +1,153 @@
 @import './fonts/base-font.scss';
+$primary-color: #4EA658;
+$secondary-color: #57B894;
+$color-black: #333;
+$color-white: #fff;
+$color-gray: #efefef;
+$color-gray-2: #757575;
 
+$fb-color: #4267B2;
+$google-color: #DB4437;
+$twitter-color: #1FA1F2;
+$insta-color: #E1306C;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.col {
+    width: 50%;
+}
+
+.sign-in {
+    // background-color: violet;
+}
+
+.sign-up {
+    background: yellow;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 28rem;
+    .form {
+        padding: 1rem;
+        background-color: $color-white;
+        border-radius: 1.5rem;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .input-group {
+        position: relative;
+        width: 100%;
+        margin: 1rem 0;
+        input {
+            width: 100%;
+            padding: 1rem 3rem;
+            font-size: 1rem;
+            background: $color-gray; 
+            border-radius: .5rem;
+            border: 0.125rem solid $color-white;
+            outline: none;
+            &:focus {
+                border: 0.125rem solid $primary-color;
+            }
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            // background-color: $color-gray-2;
+        }
+    }
+    .btn {
+        cursor: pointer;
+        width: 100%;
+        padding: .6rem 0;
+        border-radius: .5rem;
+        border: none;
+        color: $color-white;
+        font-size: 1.2rem;
+        outline: none;
+        &--primary {
+            background-color: $primary-color;
+            color: $color-white;
+        }
+    }
+    p {
+        margin: 1rem 0;
+        font-size: .7rem;
+        .sign-up-here {
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.social-list {
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .list-item {
+        color: $color-white;
+        margin: 0 .5rem;
+        padding: .7rem;
+        cursor: pointer;
+        border-radius: .5rem;
+        i {
+            font-size: 1.5rem;
+            transition: .4s ease-in-out;
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+.facebook-bg {
+    background: $fb-color;
+}
+.twitter-bg {
+    background: $twitter-color;
+}
+.google-bg {
+    background: $google-color;
+}
+.insta-bg {
+    background: $insta-color;
+}
+
+.flex-col {
+    flex-direction: column;
+}
